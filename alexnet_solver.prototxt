@@ -1,0 +1,14 @@
+net: "datahdf/shared_networks_drop/alexnet.prototxt"
+test_iter: 500
+test_interval: 500
+base_lr: 0.05
+lr_policy: "step"
+gamma: 0.1
+stepsize: 2000
+display: 500
+max_iter: 15000
+momentum: 0.8
+weight_decay: 0.0002
+snapshot: 500
+snapshot_prefix: "datahdf/shared_networks_drop/alexnet_8020"
+solver_mode: CPU
