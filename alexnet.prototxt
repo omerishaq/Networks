@@ -8,10 +8,13 @@ layers {
   data_param {
     source: "datahdf/8020train_lmdb"
     backend: LMDB
-    batch_size: 100
+    batch_size: 80
   }
   transform_param{
     scale: 0.01
+  }
+  image_data_param{
+    shuffle : true
   }
   include: { phase: TRAIN }
 }
@@ -28,6 +31,9 @@ layers {
   }
   transform_param{
     scale: 0.01
+  }
+  image_data_param{
+    shuffle : true
   }
   include: { phase: TEST }
 }
@@ -164,7 +170,7 @@ layers {
   weight_decay: 1
   weight_decay: 0
   inner_product_param {
-    num_output: 500
+    num_output: 4096
     weight_filler {
       type: "gaussian"
       std: 0.005
@@ -200,7 +206,7 @@ layers {
   weight_decay: 1
   weight_decay: 0
   inner_product_param {
-    num_output: 500
+    num_output: 4096
     weight_filler {
       type: "gaussian"
       std: 0.005
@@ -262,6 +268,4 @@ layers {
   bottom: "fc8"
   bottom: "label"
   top: "loss"
-  include: { phase: TEST }
-  include: { phase: TRAIN }
 }
