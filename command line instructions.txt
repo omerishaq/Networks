@@ -4,7 +4,7 @@ build/tools/caffe train -solver datahdf/shared_networks_drop/Networks/nin_solver
 
 Training
 --------
-
+build/tools/caffe train -solver datahdf/shared_networks_drop/Networks/nin_solver.prototxt
 
 Testing
 -------
