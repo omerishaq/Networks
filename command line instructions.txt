@@ -1,3 +1,11 @@
 Fine tuning
-
+-----------
 build/tools/caffe train -solver datahdf/shared_networks_drop/Networks/nin_solver.prototxt -weights datahdf/shared_networks_drop/nin_2080_iter_9000.caffemodel
+
+Training
+--------
+
+
+Testing
+-------
+build/tools/caffe test -model datahdf/shared_networks_drop/Networks/nin_test.prototxt -weights datahdf/Results/Dataset1/nina/2080/nin_2080_iter_1500.caffemodel  -iterations 1
