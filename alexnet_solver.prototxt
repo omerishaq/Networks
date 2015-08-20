@@ -1,4 +1,4 @@
-net: "datahdf/shared_networks_drop/alexnet.prototxt"
+net: "datahdf/shared_networks_drop/Networks/alexnet.prototxt"
 test_iter: 500
 test_interval: 500
 base_lr: 0.05
