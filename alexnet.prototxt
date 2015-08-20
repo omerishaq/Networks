@@ -27,7 +27,7 @@ layers {
     
     source: "datahdf/8020validate_lmdb"
     backend: LMDB
-    batch_size: 40
+    batch_size: 79
   }
   transform_param{
     scale: 0.01
@@ -170,7 +170,7 @@ layers {
   weight_decay: 1
   weight_decay: 0
   inner_product_param {
-    num_output: 4096
+    num_output: 300
     weight_filler {
       type: "gaussian"
       std: 0.005
@@ -206,7 +206,7 @@ layers {
   weight_decay: 1
   weight_decay: 0
   inner_product_param {
-    num_output: 4096
+    num_output: 300
     weight_filler {
       type: "gaussian"
       std: 0.005
