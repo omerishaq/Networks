@@ -22,9 +22,9 @@ layers {
   top: "label"
   data_param {
     
-    source: "datahdf/2080validate_lmdb"
+    source: "datahdf/2080test_lmdb"
     backend: LMDB
-    batch_size: 79
+    batch_size: 594
   }
   transform_param{
     scale: 0.01
