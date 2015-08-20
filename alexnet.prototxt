@@ -27,7 +27,7 @@ layers {
     
     source: "datahdf/8020validate_lmdb"
     backend: LMDB
-    batch_size: 40
+    batch_size: 79
   }
   transform_param{
     scale: 0.01
